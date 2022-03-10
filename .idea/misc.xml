@@ -6,10 +6,12 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="databind/src/main/res/layout/activity_basic.xml" value="0.17798913043478262" />
         <entry key="databind/src/main/res/layout/activity_main.xml" value="0.13072916666666667" />
+        <entry key="databind/src/main/res/layout/bs_activity_main.xml" value="0.1" />
         <entry key="databind/src/main/res/layout/bs_observable_field_profile.xml" value="0.25" />
         <entry key="databind/src/main/res/layout/bs_viewmodel_profile.xml" value="0.13072916666666667" />
         <entry key="databind/src/main/res/layout/interval_timer.xml" value="0.13072916666666667" />
         <entry key="databind/src/main/res/layout/observable_field_profile.xml" value="0.13072916666666667" />
+        <entry key="databind/src/main/res/layout/sample_main_activity.xml" value="0.2" />
         <entry key="databind/src/main/res/layout/viewmodel_profile.xml" value="0.17798913043478262" />
         <entry key="lifecycle/src/main/res/layout/activity_activity_main.xml.xml" value="0.1" />
         <entry key="lifecycle/src/main/res/layout/activity_chronometer.xml" value="0.1" />
