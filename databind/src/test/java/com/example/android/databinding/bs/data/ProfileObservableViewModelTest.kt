@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.databinding.basicsample.data
+package com.example.android.databinding.bs.data
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

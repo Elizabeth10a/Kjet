@@ -24,7 +24,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.android.databinding.basicsample.ui.MainActivity">
+        tools:context="com.example.android.databinding.bs.ui.MainActivity">
 
         <Button
             android:id="@+id/observable_fields_activity_button"

@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package com.example.android.databinding.basicsample.util
+package com.example.android.databinding.bs.util
 
 import android.content.Context
 import android.content.res.ColorStateList
-import androidx.databinding.BindingAdapter
 import android.graphics.drawable.Drawable
 import android.os.Build
-import androidx.core.content.ContextCompat
-import androidx.core.widget.ImageViewCompat
 import android.view.View
 import android.widget.ImageView
 import android.widget.ProgressBar
-import com.example.android.databinding.basicsample.data.Popularity
+import androidx.core.content.ContextCompat
+import androidx.core.widget.ImageViewCompat
+import androidx.databinding.BindingAdapter
 import com.example.android.databinding.R
+import com.example.android.databinding.bs.data.Popularity
 
 
 object BindingAdapters {

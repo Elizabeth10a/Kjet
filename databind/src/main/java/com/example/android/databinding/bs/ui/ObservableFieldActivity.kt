@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.databinding.basicsample.ui
+package com.example.android.databinding.bs.ui
 
 //import com.example.android.databinding.basicsample.databinding.ObservableFieldProfileBinding
 import android.os.Bundle
@@ -23,7 +23,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ObservableInt
 import com.example.android.databinding.R
-import com.example.android.databinding.basicsample.data.ObservableFieldProfile
+import com.example.android.databinding.bs.data.ObservableFieldProfile
 import com.example.android.databinding.databinding.BsObservableFieldProfileBinding
 
 /**

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.example.android.databinding.basicsample.util
+package com.example.android.databinding.bs.util
 
-import androidx.lifecycle.ViewModel
 import androidx.databinding.Bindable
 import androidx.databinding.Observable
 import androidx.databinding.PropertyChangeRegistry
+import androidx.lifecycle.ViewModel
 
 
 /**

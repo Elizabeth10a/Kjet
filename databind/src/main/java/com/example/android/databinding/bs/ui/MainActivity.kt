@@ -14,17 +14,16 @@
  * limitations under the License.
  */
 
-package com.example.android.databinding.basicsample.ui
-
-import android.content.Intent
-import androidx.databinding.DataBindingUtil
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import com.example.android.databinding.R
-import com.example.android.databinding.databinding.BsViewmodelProfileBinding
+package com.example.android.databinding.bs.ui
 
 //import com.example.android.databinding.basicsample.databinding.ActivityMainBinding
+import android.content.Intent
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import com.example.android.databinding.R
 import com.example.android.databinding.databinding.BsActivityMainBinding
+
 /**
  * Shows a menu.
  */

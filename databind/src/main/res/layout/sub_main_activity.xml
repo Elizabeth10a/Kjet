@@ -24,7 +24,8 @@
                 android:src="@drawable/ic_person_black_96dp" />
 
         <!--
-                        app:idol 与 tv
+
+                           app:idol -> tv.xml ->  <variable  name="idol"
 
         -->
         <include

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.databinding.basicsample.data
+package com.example.android.databinding.bs.data
 
 import androidx.databinding.Bindable
 import androidx.databinding.ObservableField
@@ -24,7 +24,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import com.example.android.databinding.BR
-import com.example.android.databinding.basicsample.util.ObservableViewModel
+import com.example.android.databinding.bs.util.ObservableViewModel
 
 
 /**

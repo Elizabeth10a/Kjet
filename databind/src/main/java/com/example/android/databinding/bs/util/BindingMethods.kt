@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.example.android.databinding.basicsample.util
+package com.example.android.databinding.bs.util
 
+import android.widget.ImageView
 import androidx.databinding.BindingMethod
 import androidx.databinding.BindingMethods
-import android.widget.ImageView
 
 
 /**

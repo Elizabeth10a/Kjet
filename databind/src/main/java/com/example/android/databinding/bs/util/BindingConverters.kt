@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.example.android.databinding.basicsample.util
+package com.example.android.databinding.bs.util
 
-import androidx.databinding.BindingConversion
 import android.view.View
+import androidx.databinding.BindingConversion
 
 /**
  * In order to show a View only when it has more than 0 likes, we pass this expression to its

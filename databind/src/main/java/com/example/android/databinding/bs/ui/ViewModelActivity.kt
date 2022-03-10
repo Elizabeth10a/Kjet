@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.databinding.basicsample.ui
+package com.example.android.databinding.bs.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -22,7 +22,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProviders
 import com.example.android.databinding.R
 
-import com.example.android.databinding.basicsample.data.ProfileLiveDataViewModel
+import com.example.android.databinding.bs.data.ProfileLiveDataViewModel
 import com.example.android.databinding.databinding.BsViewmodelProfileBinding
 
 /**
@@ -30,7 +30,7 @@ import com.example.android.databinding.databinding.BsViewmodelProfileBinding
  * actions. Also, the layout uses [android.databinding.BindingAdapter]s instead of expressions
  * which are much more powerful.
  *
- * @see com.example.android.databinding.basicsample.util.BindingAdapters
+ * @see com.example.android.databinding.bs.util.BindingAdapters
  */
 class ViewModelActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

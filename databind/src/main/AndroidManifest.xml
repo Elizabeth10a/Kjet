@@ -1,22 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  Copyright (C) 2018 The Android Open Source Project
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-  -->
-
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="com.example.android.databinding">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -24,8 +10,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/bs_AppTheme">
+
         <activity
-                android:name=".basicsample.ui.MainActivity"
+                android:name=".bs.ui.MainActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,9 +21,9 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".basicsample.ui.ObservableFieldActivity"
-                android:label="ObservableField Activity"
-                android:exported="true">
+                android:name=".bs.ui.ObservableFieldActivity"
+                android:exported="true"
+                android:label="ObservableField Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,31 +31,45 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".basicsample.ui.ViewModelActivity"
-                android:label="ViewModel Activity"
-                android:exported="true">
+                android:name=".bs.ui.ViewModelActivity"
+                android:exported="true"
+                android:label="ViewModel Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
                 android:name="com.eliza.databinding.sample.MainSampleActivity"
-                android:label="MainSampleActivity"
-                android:exported="true">
-
+                android:exported="true"
+                android:label="MainSampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.eliza.databinding.sub.SubMainActivity"
-                android:label="SubMainActivity"
+        <activity
+                android:name="com.eliza.databinding.sub.SubMainActivity"
+                android:exported="true"
+                android:label="SubMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="com.eliza.databinding.ba.BaActivity"
+                android:label="BaActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

@@ -24,10 +24,10 @@
     <data>
 
         <import type="com.example.android.databinding.R"/>
-        <import type="com.example.android.databinding.basicsample.util.ConverterUtil"/>
+        <import type="com.example.android.databinding.bs.util.ConverterUtil"/>
         <variable
             name="user"
-            type="com.example.android.databinding.basicsample.data.ObservableFieldProfile" />
+            type="com.example.android.databinding.bs.data.ObservableFieldProfile" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

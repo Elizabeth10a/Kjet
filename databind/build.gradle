@@ -41,7 +41,7 @@ android {
     }
 }
 dependencies {
-    def sdd = packagess.listToOne([lifecycle, glide, rxjava3, paging, nav, room, sqlite, arch_core, kotlin_coroutines])
+    def sdd = packagess.listToOne([picasso,lifecycle, glide, rxjava3, paging, nav, room, sqlite, arch_core, kotlin_coroutines])
     packagess.Import(sdd)
     implementation packagess.implementationList
     testImplementation packagess.testImplementationList

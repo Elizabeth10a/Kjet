@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.databinding.basicsample.data
+package com.example.android.databinding.bs.data
 
 import androidx.databinding.ObservableInt
 
