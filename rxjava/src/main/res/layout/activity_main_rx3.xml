@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".rx3.Rxjava3Main">
+
+    <Button
+            android:id="@+id/rx3_main_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击显示图片" />
+
+    <!--
+    Rxjava3 使用，展示图片
+    -->
+
+    <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/rx3_main_img"
+            android:layout_width="match_parent"
+            android:scrollbarStyle="outsideInset"
+            android:layout_height="160dp" />
+
+
+    <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gilde"
+
+       />
+
+
+</LinearLayout>

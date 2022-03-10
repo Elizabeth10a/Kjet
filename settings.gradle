@@ -1,0 +1,42 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        maven {
+            allowInsecureProtocol = true
+            url 'http://192.168.10.1:8081/repository/android-group/'
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://192.168.10.1:8081/repository/java-group'
+        }
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenLocal()
+        maven {
+            allowInsecureProtocol = true
+            url 'http://192.168.10.1:8081/repository/android-group/'
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://192.168.10.1:8081/repository/java-group'
+        }
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Kjet"
+include ':app'
+include ':nava'
+include ':navs'
+include ':viewbind'
+include ':rxjava'
+include ':livedata'
+include ':databind'
+include ':viewmodel'
+include ':lifecycle'

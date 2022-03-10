@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <TextView
+            android:id="@+id/vm_main_tv"
+            android:layout_width="match_parent"
+            android:textSize="28sp"
+            android:layout_height="30dp" />
+
+    <Button
+            android:id="@+id/vm_main_btn"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+
+    <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fg_first"
+            android:name="com.eliza.livedata.fg.First"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fg_second"
+            android:layout_marginTop="30dp"
+            android:name="com.eliza.livedata.fg.Second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</LinearLayout>

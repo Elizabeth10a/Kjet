@@ -1,0 +1,271 @@
+/**
+ * Shared file between builds so that they can all use the same dependencies and
+ * maven repositories.
+ **/
+def kotlin_versions = "1.6.10"
+def kotlin_v = [
+        "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_versions",
+        "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_versions",
+        "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_versions",
+        "org.jetbrains.kotlin:kotlin-allopen:$kotlin_versions"]
+ext.kotlin_v = kotlin_v
+
+
+/* [
+            implementation           : "0",
+            testImplementation       : "1",
+            kapt                     : "2",
+            runtimeOnly              : "3",
+            annotationProcessor      : "4",
+            androidTestImplementation: "5"
+    ]*/
+def implementation_v = 0
+def testImplementation_v = 1
+def kapt_v = 2
+def runtimeOnly_v = 3
+def annotationProcessor_v = 4
+def androidTestImplementation_v = 5
+
+def arch_version = "2.1.0"
+def arch_core = [
+        "$testImplementation_v androidx.arch.core:core-runtime:$arch_version",
+        "$testImplementation_v androidx.arch.core:core-testing:$arch_version"]
+ext.arch_core = arch_core
+
+def lifecycle_version = "2.4.1"
+def lifecycle = [
+// ViewModel
+"$implementation_v androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version",
+"$implementation_v androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version",
+"$implementation_v androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version",
+"$implementation_v androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version",
+"$implementation_v androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version",
+"$kapt_v androidx.lifecycle:lifecycle-compiler:$lifecycle_version",
+"$implementation_v androidx.lifecycle:lifecycle-common-java8:$lifecycle_version",
+"$implementation_v androidx.lifecycle:lifecycle-service:$lifecycle_version",
+"$implementation_v androidx.lifecycle:lifecycle-process:$lifecycle_version",
+"$implementation_v androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version",
+]
+ext.lifecycle = lifecycle
+
+
+def kotlin_coroutines_versions = "1.6.0"
+def kotlin_coroutines = [
+        "$implementation_v org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines_versions",
+        "$testImplementation_v org.jetbrains.kotlinx:kotlinx-coroutines-test:$kotlin_coroutines_versions",
+        "$implementation_v org.jetbrains.kotlinx:kotlinx-coroutines-guava:$kotlin_coroutines_versions",
+        "$runtimeOnly_v org.jetbrains.kotlinx:kotlinx-coroutines-reactor:$kotlin_coroutines_versions",
+        // https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-android
+        "$runtimeOnly_v org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines_versions",
+
+]
+ext.kotlin_coroutines = kotlin_coroutines
+
+def sqlite_version = "2.2.0"
+def sqlite = [
+        // Java language implementation_v
+        "$implementation_v androidx.sqlite:sqlite:$sqlite_version",
+        "$implementation_v androidx.sqlite:sqlite-ktx:$sqlite_version",
+        "$implementation_v androidx.sqlite:sqlite-framework:$sqlite_version"]
+ext.sqlite = sqlite
+
+
+def room_version = "2.4.1"
+def room = [
+        "$implementation_v androidx.room:room-runtime:$room_version",
+        "$kapt_v androidx.room:room-compiler:$room_version",
+        "$implementation_v androidx.room:room-rxjava2:$room_version",
+        "$implementation_v androidx.room:room-rxjava3:$room_version",
+        "$implementation_v androidx.room:room-guava:$room_version",
+        "$testImplementation_v androidx.room:room-testing:$room_version",
+        "$implementation_v androidx.room:room-paging:$room_version",
+        "$implementation_v androidx.room:room-ktx:$room_version",
+]
+ext.room = room
+
+
+def nav_version = "2.4.1"
+def nav = [
+        "$implementation_v androidx.navigation:navigation-fragment:$nav_version",
+        "$implementation_v androidx.navigation:navigation-ui:$nav_version",
+        "$implementation_v androidx.navigation:navigation-fragment-ktx:$nav_version",
+        "$implementation_v androidx.navigation:navigation-ui-ktx:$nav_version",
+        "$implementation_v androidx.navigation:navigation-dynamic-features-fragment:$nav_version",
+        "$androidTestImplementation_v androidx.navigation:navigation-testing:$nav_version",
+        "$implementation_v androidx.navigation:navigation-compose:$nav_version",
+]
+ext.nav = nav
+
+
+def paging_version = "3.1.0"
+def paging = [
+        "$implementation_v androidx.paging:paging-runtime:$paging_version",
+        "$testImplementation_v androidx.paging:paging-common:$paging_version",
+        "$implementation_v androidx.paging:paging-rxjava2:$paging_version",
+        "$implementation_v androidx.paging:paging-rxjava3:$paging_version",
+        "$implementation_v androidx.paging:paging-guava:$paging_version",
+        "$implementation_v androidx.paging:paging-compose:1.0.0-alpha14",
+]
+ext.paging = paging
+def rxjava3_version = "3.0.0"
+def rxjava3 = [
+        "$implementation_v io.reactivex.rxjava3:rxjava:$rxjava3_version",
+        "$implementation_v io.reactivex.rxjava3:rxandroid:$rxjava3_version",
+        "$implementation_v io.reactivex.rxjava3:rxkotlin:$rxjava3_version"]
+ext.rxjava3 = rxjava3
+
+
+def glide_version = "4.13.1"
+def glide = [
+        "$implementation_v com.github.bumptech.glide:glide:$glide_version",
+        "$runtimeOnly_v com.github.bumptech.glide:compiler:$glide_version"
+]
+ext.glide = glide
+
+def hilt_android_version = "2.41"
+def hilt_android = [
+        "$implementation_v com.google.dagger:hilt-android:$hilt_android_version",
+        "$kapt_v com.google.dagger:hilt-android-compiler:$hilt_android_version"
+]
+ext.hilt_android = hilt_android
+
+def work_version = "2.7.1"
+def work = [
+
+// (Java only)
+"$implementation_v androidx.work:work-runtime:$work_version",
+"$implementation_v androidx.work:work-runtime-ktx:$work_version",
+"$implementation_v androidx.work:work-rxjava2:$work_version",
+"$implementation_v androidx.work:work-gcm:$work_version",
+"$androidTestImplementation_v androidx.work:work-testing:$work_version",
+"$implementation_v androidx.work:work-multiprocess:$work_version",
+
+]
+ext.work = work
+
+def okhttp3_version = "4.9.3"
+def okhttp3 = [
+// https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
+"$implementation_v com.squareup.okhttp3:okhttp:$okhttp3_version",
+"$implementation_v com.squareup.okhttp3:logging-interceptor:$okhttp3_version"
+]
+ext.okhttp3 = okhttp3
+
+def retrofit2_version = "2.9.0"
+def retrofit2 = [
+        "$implementation_v com.squareup.retrofit2:converter-gson:$retrofit2_version",
+        "$implementation_v com.squareup.retrofit2:retrofit:$retrofit2_version"
+]
+ext.retrofit2 = retrofit2
+
+
+def doPrint(Integer list) {
+    println list
+}
+
+/*
+    闭包处理
+* */
+
+@Deprecated
+def doPost(ArrayList<String> depen, block) {
+    for (i in 0..<depen.size()) {
+        doPrint(
+                depen.get(i).toString()[2..depen.get(i).toString().length() - 1]
+        )
+        block(i)
+    }
+}
+
+@Deprecated
+def doPost2(ArrayList<String> depen, block) {
+    def dep = [:] as ArrayList
+    for (i in 0..<depen.size()) {
+        dep.add(i, depen.get(i).toString()[2..depen.get(i).toString().length() - 1])
+        block(i)
+    }
+}
+
+
+ext.doPrint = this.&doPrint
+ext.doPost = this.&doPost
+
+class ImportPackages {
+    static protected String implementation = "0"
+    static protected String testImplementation = "1"
+    static protected String kapt = "2"
+    static protected String runtimeOnly = "3"
+    static protected String annotationProcessor = "4"
+    static protected String androidTestImplementation = "5"
+
+    protected ArrayList<String> implementationList = [:]
+    protected ArrayList<String> testImplementationList = [:]
+    protected ArrayList<String> kaptList = [:]
+    protected ArrayList<String> runtimeOnlyList = [:]
+    protected ArrayList<String> annotationProcessorLists = [:]
+    protected ArrayList<String> androidTestImplementationList = [:]
+
+    public Import(ArrayList<String> depen) {
+        println "depen.size()::${depen.size()}"
+        for (i in 0..<depen.size()) {
+            switch (depen.get(i).charAt(0)) {
+                case implementation:
+                    implementationList.add(depen.get(i).toString()[2..depen.get(i).toString().length() - 1])
+                    break
+                case testImplementation:
+                    testImplementationList.add(depen.get(i).toString()[2..depen.get(i).toString().length() - 1])
+                    break
+                case kapt:
+                    kaptList.add(depen.get(i).toString()[2..depen.get(i).toString().length() - 1])
+                    break
+                case runtimeOnly:
+                    runtimeOnlyList.add(depen.get(i).toString()[2..depen.get(i).toString().length() - 1])
+                    break
+                case annotationProcessor:
+                    annotationProcessorLists.add(depen.get(i).toString()[2..depen.get(i).toString().length() - 1])
+                    break
+                case androidTestImplementation:
+                    androidTestImplementationList.add(depen.get(i).toString()[2..depen.get(i).toString().length() - 1])
+                    break
+            }
+        }
+    }
+
+
+    public String toString() {
+        implementationList.forEach { println "\t$it" }
+        testImplementationList.forEach { println "\t$it" }
+        kaptList.forEach { println "\t$it" }
+        runtimeOnlyList.forEach { println "\t$it" }
+        annotationProcessorLists.forEach { println "\t$it" }
+        androidTestImplementationList.forEach { println "\t$it" }
+
+
+    }
+
+    public String ImportInfoSize() {
+        return """ImportPackages{
+              \t implementationList= ${implementationList.size()}
+              \t testImplementationList= ${testImplementationList.size()}
+              \t kaptList= ${kaptList.size()}
+              \t runtimeOnlyList= ${runtimeOnlyList.size()}
+              \t annotationProcessorLists= ${annotationProcessorLists.size()}
+              \t androidTestImplementationList= ${androidTestImplementationList.size()}
+             }
+                """
+    }
+
+    ArrayList listToOne(ArrayList<ArrayList<Collection>> list) {
+        def result = [:] as ArrayList
+        for (i in 0..<list.size()) {
+            result.addAll(list.get(i))
+        }
+        println "result.size:${result.size()}"
+
+        return result
+    }
+}
+
+
+def packagess = new ImportPackages()
+ext.packagess = packagess

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".rx3.Rxjava3Test">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/skipTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="skipTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/debounceTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="debounceTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/distinctTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="distinctTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/elementAtTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="elementAtTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/filterTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="filterTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/firstTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="firstTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/lastTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="lastTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/ignoreElementTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="ignoreElementTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/ofTypeTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="ofTypeTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/sampleTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="sampleTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/throttleFirstTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="throttleFirstTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/throttleLatestTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="throttleLatestTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/takeAndtakeLastTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="takeAndtakeLastTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/timeoutTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="timeoutTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/startWithTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="startWithTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/mergeTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="mergeTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/zipTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="zipTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/bufferTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="bufferTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/castTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="castTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/concatMapTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="concatMapTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/concatMapDelayErrorTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="concatMapDelayErrorTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/concatMapCompletableTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="concatMapCompletableTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/concatMapCompletableDelayErrorTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="concatMapCompletableDelayErrorTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/flatMapTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="flatMapTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/flattenAsFlowableAndFlattenAsObservableTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="flattenAsFlowableAndFlattenAsObservableTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/groupByTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="groupByTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/scanTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="scanTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/windowTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="windowTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/onErrorReturnTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="onErrorReturnTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/onErrorReturnItemTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="onErrorReturnItemTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/onExceptionResumeNextTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="onExceptionResumeNextTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/retryTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="retryTest"
+                    android:textColor="@android:color/white" />
+
+            <TextView
+                    android:id="@+id/retryUntilTest"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="retryUntilTest"
+                    android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.core.widget.NestedScrollView>
