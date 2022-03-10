@@ -6,20 +6,16 @@
 
         <variable
                 name="idol"
-                type="com.eliza.databinding.sample.model.Idol" />
+                type="com.eliza.databinding.sub.model.User" />
+        <import type="com.eliza.databinding.sub.model.StarUtils" />
 
-        <import type="com.eliza.databinding.sample.model.StarUtils" />
-
-        <variable
-                name="onClickHandle"
-                type="com.eliza.databinding.sample.handle.OnClickHandle" />
     </data>
 
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            tools:context="com.eliza.databinding.sample.MainSampleActivity">
+            tools:context="com.eliza.databinding.sub.SubMain">
 
         <TextView
 
@@ -35,12 +31,7 @@
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="@{StarUtils.getStar(idol.star)}" />
+                android:text="@{StarUtils.getAge(idol.age)}" />
 
-        <Button
-                android:text="点击 like"
-                android:onClick="@{onClickHandle.buttonOnClick}"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
     </LinearLayout>
 </layout>

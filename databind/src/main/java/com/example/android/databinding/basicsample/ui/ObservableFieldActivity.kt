@@ -16,6 +16,7 @@
 
 package com.example.android.databinding.basicsample.ui
 
+//import com.example.android.databinding.basicsample.databinding.ObservableFieldProfileBinding
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -24,8 +25,6 @@ import androidx.databinding.ObservableInt
 import com.example.android.databinding.R
 import com.example.android.databinding.basicsample.data.ObservableFieldProfile
 import com.example.android.databinding.databinding.BsObservableFieldProfileBinding
-//import com.example.android.databinding.basicsample.databinding.ObservableFieldProfileBinding
-import com.example.android.databinding.databinding.BsViewmodelProfileBinding
 
 /**
  * This activity shows shows static data and lets the user increment the
